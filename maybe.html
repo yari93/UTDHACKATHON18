@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>STEM Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('http://www.clipartlord.com/wp-content/uploads/2014/05/alien11.png');
+    min-height: 100%;
+}
+
+/* Second image (Education) */
+.bgimg-2 {
+    background-image: url("http://cliparts.co/cliparts/6Tr/ydR/6TrydR8TK.png");
+    min-height: 400px;
+}
+
+/* Third image (STEM) */
+.bgimg-3 {
+    background-image: url("http://sf.co.ua/14/01/wallpaper-955931.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    
+  <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#Learn" class="w3-bar-item w3-button">LEARN</a>
+    <a href="#stem" class="w3-bar-item w3-button">STEM</a>
+    
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">LET'S PLAY CODE</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PLAY</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">CODE</span> Y</span>
+  </div>
+</div>
+
+<!-- Container (LET PLAY CODE) -->
+ 
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> </p>
+    </div>
+  </div>
+  
+  
+  <div class="w3-light-grey">
+    
+  
+  
+   
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  
+</div>
+
+<!-- Second Parallax Image with EDUCATION Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">EDUCATION</span>
+  </div>
+</div>
+
+<!-- Container (LEARN Section) -->
+<div class= "w3-centered">
+<div class="w3-content w3-container w3-padding-64" id="Learn">
+  <h3 class="w3-center">LETS LEARN</h3>
+  <p class= "w3-center"><em>Click on one of the characters for the fun to start</em></p><br>
+ 
+  <p class= "w3-center"><em>Software Development:</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+ 
+  <div class="w3-content w3-container w3-center">
+    
+    <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://photos.gograph.com/thumbs/CSP/CSP990/k11091584.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Snailalien">
+    </div>
+
+    <div class="w3-col m3">
+     <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+     <img src="http://www.cartoon-clipart.com/cartoon_clipart_images/alien_cartoon_planet_with_rings_around_it_in_outer_space_0515-1003-2503-4433_SMU.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Planet">
+    </div>
+
+    <div class="w3-col m3">
+    <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://png.clipart.me/graphics/thumbs/179/alien-robot_179859179.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="fight">
+    </div>
+
+    <div class="w3-col m3">
+      <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://66.media.tumblr.com/b0411f43906d4f06a500ff779c315a8f/tumblr_nsac4cXKeS1t5r1mpo1_500.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="chicken">
+    </div>
+</div>
+    
+    <p class= "w3-center"><em>Learn to Code:</em></p><br>
+    
+  <div class="w3-col m3">
+      <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://www.clipartbest.com/cliparts/4T9/rMq/4T9rMqaTE.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="meanalien">
+    </div>
+    
+     <div class="w3-col m3">
+      <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://www.clker.com/cliparts/R/J/h/G/p/c/comet-hi.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="astroid">
+    </div>
+
+ 
+    
+    <div class="w3-col m3">
+      <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://fc09.deviantart.net/fs71/i/2011/324/f/1/black_hole_by_pjillustrator-d4grj9l.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="blackhole">
+    </div>
+    
+ 
+<div class="w3-col m3">
+      <a href="file:///Users/yaritzadalilavalverde/Downloads/game1.html">
+      <img src="http://www.clker.com/cliparts/W/X/y/k/W/Z/spaceship-1-hi.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="spaceship">
+
+
+    </div>
+   
+    </div>
+</div>
+
+<!--  for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with STEM Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">STEM</span>
+  </div>
+</div>
+
+<!-- Container (Contact STEM) -->
+<div class="w3-content w3-container w3-padding-64" id="stem">
+  <h3 class="w3-center">The need</h3>
+  <p class="w3-center"><em>STEM : Science, Technology, Engineering and Mathmatics</em></p>
+  
+  <div class="w3-container">
+  <p> "All young people should be prepared to think deeply and to think well so that they have the chance to become the innovators, educators, researchers, and leaders who can solve the most pressing challenges facing our nation and our world, both today and tomorrow. But, right now, not enough of our youth have access to quality STEM learning opportunities and too few students see these disciplines as springboards for their careers" - U.S Department of Education </p>
+      <div class="w3-row">
+  
+  <p class="w3-center"><em><br> </em></p><br>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    
+      
+
+<!-- Footer -->
+<footer>
+</footer>
+</script>
+</body>
+</html>
+
+
+
